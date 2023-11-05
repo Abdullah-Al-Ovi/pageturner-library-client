@@ -3,6 +3,9 @@ import Root from "../Root/Root";
 import Home from "../Pages/Home/Home";
 import SignIn from "../Pages/SignIn/SignIn";
 import SignOut from "../Pages/SignOut/SignOut";
+import BorrowedBooks from "../Pages/BorrowedBooks/BorrowedBooks";
+import AllBooks from "../Pages/AllBooks/AllBooks";
+import AddBooks from "../Pages/AddBooks/AddBooks";
 
 
 const Router = createBrowserRouter([
@@ -21,6 +24,18 @@ const Router = createBrowserRouter([
             {
                 path:'/sign-out',
                 element:<SignOut></SignOut>
+            },
+            {
+                path:'/borrowed-books',
+                element:<BorrowedBooks></BorrowedBooks>
+            },
+            {
+                path:'/all-books',
+                element:<AllBooks></AllBooks>
+            },
+            {
+                path:'/add-books',
+                element:<AddBooks></AddBooks>
             }
         ]
     }
