@@ -35,7 +35,7 @@ const SignIn = () => {
         setErr('')
         googleSignIn()
         .then(()=>{
-            navigate(location?.state && location.state )
+            navigate(location?.state ? location.state : '/' )
             swal("Sign in with Google Successful!", "Thanks for coming back!", "success");
         })
         .catch(error=>{
