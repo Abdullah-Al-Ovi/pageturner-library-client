@@ -4,7 +4,7 @@ import '@smastrom/react-rating/style.css'
 import { Link } from 'react-router-dom';
 
 const CategoryBook = ({books}) => {
-    const {_id,name,category,rating,quantity,author_name,image}=books
+    const {_id,name,category,rating,author_name,image}=books
     return (
         <div className="card flex flex-col card-side bg-base-100 shadow-xl">
         <div className='flex flex-grow flex-col md:flex-row'>
@@ -27,7 +27,7 @@ const CategoryBook = ({books}) => {
         </div>
         
         <div className=' w-[100%] text-center'>
-        <Link  ><button className='w-[60%] text-white  font-medium bg-red-300 rounded my-3 '>Details</button></Link>
+        <Link to={`/book/${_id}`} ><button className='w-[60%] text-white  font-medium bg-red-300 rounded my-3 '>Details</button></Link>
         </div>
         
 </div>

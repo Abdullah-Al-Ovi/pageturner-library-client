@@ -10,6 +10,7 @@ import SignUp from "../Pages/SignUp/SignUp";
 import PrivateRoute from "../Components/PrivateRoute/PrivateRoute";
 import AdminPrivateRoute from "../Components/AdminPrivateRoute/AdminPrivateRoute";
 import CategoryBooks from "../Pages/CategoryBooks/CategoryBooks";
+import BookDetails from "../Pages/BookDetails/BookDetails";
 
 
 const Router = createBrowserRouter([
@@ -45,6 +46,11 @@ const Router = createBrowserRouter([
                 path:'/category/:cat',
                 element:<CategoryBooks></CategoryBooks>,
                 loader:({params})=>fetch(`http://localhost:5000/category/${params.cat}`)
+            },
+            {
+                path:'/book/:id',
+                element:<BookDetails></BookDetails>,
+                loader:({params})=>fetch(`http://localhost:5000/book/${params.id}`)
             }
         ]
     }
