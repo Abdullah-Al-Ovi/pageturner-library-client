@@ -39,6 +39,9 @@ const Router = createBrowserRouter([
             {
                 path:'/add-books',
                 element:<AdminPrivateRoute><AddBooks></AddBooks></AdminPrivateRoute>
+            },
+            {
+                path:'/cate'
             }
         ]
     }

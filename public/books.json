@@ -1,0 +1,167 @@
+[
+    {
+      "image": "https://i.ibb.co/v4Pnx2C/gillian.jpg",
+      "name": "Gone Girl",
+      "quantity": 4,
+      "author_name": "Gillian Flynn",
+      "category": "Thriller",
+      "short_description": "New York Times bestselling author Gillian Flynn delivers a disturbingly believable thriller about a woman who disappears on the morning of her fifth wedding anniversary.",
+      "rating": 4.5,
+      "content": "On the morning of Nick and Amy Dunne's fifth wedding anniversary, Amy disappears. Nick's life becomes a living hell as he's thrust into the media spotlight and the police make him their prime suspect. But Nick knows he's innocent, and he'll stop at nothing to find his wife."
+    },
+    {
+      "image": "https://i.ibb.co/mbDgmV8/dragon-tattoo.jpg",
+      "name": "The Girl with the Dragon Tattoo",
+      "quantity": 5,
+      "author_name": "Stieg Larsson",
+      "category": "Thriller",
+      "short_description": "Lisbeth Salander, a brilliant and troubled hacker, and Mikael Blomkvist, an investigative journalist disgraced by a libel conviction, team up to investigate a 40-year-old murder mystery.",
+      "rating": 4.6,
+      "content": "Lisbeth Salander is a young woman with a troubled past. She's brilliant, but she's also a hacker and a social outcast. Mikael Blomkvist is a disgraced journalist who's been hired by a wealthy family to investigate the 40-year-old disappearance of their daughter. Lisbeth and Mikael's paths cross when they're both drawn into the mystery of Harriet Vanger's disappearance."
+    },
+    {
+      "image": "https://i.ibb.co/jfVH1qJ/Silent-Patient.jpg",
+      "name": "The Silent Patient",
+      "quantity": 6,
+      "author_name": "Alex Michaelides",
+      "category": "Thriller",
+      "short_description": "A criminal psychotherapist becomes obsessed with unlocking the secrets of a young woman who suddenly stops speaking after killing her husband.",
+      "rating": 4.7,
+      "content": "Alicia Berenson is a young woman who suddenly stops speaking after killing her husband. She's been in a psychiatric hospital for six years, and she's never spoken a word since. Theo Faber is a criminal psychotherapist who's obsessed with unlocking Alicia's secrets. He believes that if he can get her to talk, he can solve the mystery of what happened to her husband."
+    },
+    {
+      "image": "https://i.ibb.co/K7vZxz4/murder-club.jpg",
+      "name": "The Thursday Murder Club",
+      "quantity": 7,
+      "author_name": "Richard Osman",
+      "category": "Thriller",
+      "short_description": "Four unlikely friends meet weekly to discuss unsolved murders, but when a real murder happens right on their doorstep, they decide to take matters into their own hands.",
+      "rating": 4.8,
+      "content": "Four unlikely friends meet weekly to discuss unsolved murders. They call themselves the Thursday Murder Club. One day, a real murder happens right on their doorstep, and the Thursday Murder Club is determined to solve it."
+    },
+    {
+        "image": "https://i.ibb.co/ZXLcT79/pride-and-prejudice.jpg",
+        "name": "Pride and Prejudice",
+        "quantity": 4,
+        "author_name": "Jane Austen",
+        "category": "Novel",
+        "short_description": "A witty and insightful novel about love, marriage, and social class in Regency England.",
+        "rating": 4.5,
+        "content": "Pride and Prejudice tells the story of Elizabeth Bennet, a young woman who must choose between two suitors: the proud and wealthy Mr. Darcy and the charming and carefree Mr. Wickham."
+      },
+      {
+        "image": "https://i.ibb.co/hBtg8Y2/mockingbird.jpg",
+        "name": "To Kill a Mockingbird",
+        "quantity": 5,
+        "author_name": "Harper Lee",
+        "category": "Novel",
+        "short_description": "A powerful and moving novel about racism and injustice in the American South during the Great Depression.",
+        "rating": 4.6,
+        "content": "To Kill a Mockingbird tells the story of Scout Finch, a young girl who witnesses the trial of her father, Atticus Finch, who is defending a black man falsely accused of rape."
+      },
+      {
+        "image": "https://i.ibb.co/xFKZx0j/100-years.jpg",
+        "name": "One Hundred Years of Solitude",
+        "quantity": 6,
+        "author_name": "Gabriel García Márquez",
+        "category": "Novel",
+        "short_description": "A stunning and magical realist novel about the Buendía family and their town of Macondo over the course of a century.",
+        "rating": 4.7,
+        "content": "One Hundred Years of Solitude is the story of the Buendía family and their town of Macondo over the course of a century. The novel is full of magical realism, with events such as a rain of yellow flowers and a plague of insomnia that strikes the town."
+      },
+      {
+        "image": "https://i.ibb.co/bW2rdXX/beloved.jpg",
+        "name": "Beloved",
+        "quantity": 7,
+        "author_name": "Toni Morrison",
+        "category": "Novel",
+        "short_description": "A powerful and haunting novel about the legacy of slavery and the power of love.",
+        "rating": 4.8,
+        "content": "Beloved tells the story of Sethe, a former slave who is haunted by the ghost of her dead daughter, Beloved. Sethe is determined to protect her surviving children from the horrors of slavery and the legacy of the past."
+      },
+      {
+        "image": "https://i.ibb.co/Vgq4szp/sapiens.jpg",
+        "name": "Sapiens",
+        "quantity": 4,
+        "author_name": "Yuval Noah Harari",
+        "category": "History",
+        "short_description": "A groundbreaking and provocative look at the history of humankind.",
+        "rating": 4.5,
+        "content": "Sapiens tells the story of humankind from the Stone Age to the present day. Harari explores how we became the dominant species on Earth and how our choices have shaped the world we live in today."
+      },
+      {
+        "image": "https://i.ibb.co/fQY8b0K/guns-germs.jpg",
+        "name": "Guns,Germs and Steel",
+        "quantity": 5,
+        "author_name": "Jared Diamond",
+        "category": "History",
+        "short_description": "An epic and Pulitzer Prize-winning exploration of the factors that have led to the different levels of development across the world.",
+        "rating": 4.6,
+        "content": "Guns, Germs, and Steel argues that the different levels of development across the world are not due to any inherent superiority of one race over another, but rather to the geographical and environmental factors that have shaped the history of different civilizations."
+      },
+      {
+        "image": "https://i.ibb.co/yFz71j9/short-history.jpg",
+        "name": "Short History of Nearly Everything",
+        "quantity": 6,
+        "author_name": "Bill Bryson",
+        "category": "History",
+        "short_description": "A witty and informative tour of the universe, from the Big Bang to the present day.",
+        "rating": 4.7,
+        "content": "A Short History of Nearly Everything is a comprehensive and engaging overview of the universe and our place in it. Bryson covers a wide range of topics, including physics, chemistry, biology, geology, and astronomy."
+      },
+      {
+        "image": "https://i.ibb.co/X8wjw0j/raise-fall.jpg",
+        "name": "Rise and Fall of the Third Reich",
+        "quantity": 7,
+        "author_name": "William L. Shirer",
+        "category": "History",
+        "short_description": "A definitive and Pulitzer Prize-winning account of the rise and fall of Nazi Germany.",
+        "rating": 4.8,
+        "content": "Rise and Fall of the Third Reich is a comprehensive and detailed account of the rise and fall of Nazi Germany. Shirer covers all aspects of the Nazi regime, from its origins to its collapse."
+      },
+      {
+        "image": "https://i.ibb.co/VQbrhc1/dune.jpg",
+        "name": "Dune",
+        "quantity": 4,
+        "author_name": "Frank Herbert",
+        "category": "Sci-Fi",
+        "short_description": "A groundbreaking and epic science fiction novel about the planet Arrakis, the only source of the valuable spice melange.",
+        "rating": 4.5,
+        "content": "Dune tells the story of Paul Atreides, a young man who must lead the Fremen, a native people of Arrakis, in a rebellion against the Harkonnens, the evil house that has ruled the planet for generations."
+      },
+      {
+        "image": "https://i.ibb.co/cXDqxdY/space.png",
+        "name": "2001: A Space Odyssey",
+        "quantity": 5,
+        "author_name": "Arthur C. Clarke",
+        "category": "Sci-Fi",
+        "short_description": "A classic science fiction novel about a group of astronauts who discover a mysterious alien monolith on the moon.",
+        "rating": 4.6,
+        "content": "2001: A Space Odyssey is a complex and philosophical novel that explores themes such as the nature of intelligence, the meaning of life, and the future of humanity."
+      },
+      {
+        "image": "https://i.ibb.co/jTb0X4W/1984.jpg",
+        "name": "1984",
+        "quantity": 6,
+        "author_name": "George Orwell",
+        "category": "Sci-Fi",
+        "short_description": "A dystopian science fiction novel about a totalitarian regime that controls every aspect of its citizens' lives.",
+        "rating": 4.7,
+        "content": "1984 is a cautionary tale about the dangers of totalitarianism and the importance of individual freedom."
+      },
+      {
+        "image": "https://i.ibb.co/1bKn6t3/fahren.jpg",
+        "name": "Fahrenheit 451",
+        "quantity": 7,
+        "author_name": "Ray Bradbury",
+        "category": "Sci-Fi",
+        "short_description": "A dystopian science fiction novel about a future where books are banned and firemen are tasked with burning them.",
+        "rating": 4.8,
+        "content": "Fahrenheit 451 is a powerful defense of free speech and the importance of literature."
+      }
+
+
+
+
+  ]
+  

@@ -44,7 +44,7 @@ const Navbar = () => {
       </ul>
     </div>
     <img className="w-[50px] h-[50px] rounded-full" src={logo} />
-    <a className="btn btn-ghost normal-case md:text-xl">PageTurner Library</a>
+    <Link className="btn btn-ghost normal-case md:text-xl" to='/'>PageTurner Library</Link>
   </div>
   <div className="navbar-center hidden lg:flex">
     <ul className="menu menu-horizontal px-1">

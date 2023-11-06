@@ -1,0 +1,19 @@
+[
+    {
+        "name":"Thriller",
+        "image":"https://i.ibb.co/nc4G1cf/thrillers.jpg"
+    },
+    {
+        "name":"Novel",
+        "image":"https://i.ibb.co/7VW7B1C/novel.jpg"
+    },
+    {
+        "name":"History",
+        "image":"https://i.ibb.co/h2Pfy0Y/history.jpg"
+    },
+    {
+        "name":"Sci-Fi",
+        "image":"https://i.ibb.co/4StvJf8/sci-fi.jpg"
+    }
+
+]
