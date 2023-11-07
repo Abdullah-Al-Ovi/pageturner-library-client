@@ -12,6 +12,7 @@ import AdminPrivateRoute from "../Components/AdminPrivateRoute/AdminPrivateRoute
 import CategoryBooks from "../Pages/CategoryBooks/CategoryBooks";
 import BookDetails from "../Pages/BookDetails/BookDetails";
 import UpdateBook from "../Pages/UpdateBook/UpdateBook";
+import Content from "../Pages/COntent/Content";
 
 
 const Router = createBrowserRouter([
@@ -56,6 +57,11 @@ const Router = createBrowserRouter([
             {
                 path:'/updateBook/:id',
                 element:<AdminPrivateRoute><UpdateBook></UpdateBook></AdminPrivateRoute>,
+                loader:({params})=>fetch(`http://localhost:5000/book/${params.id}`,{credentials:"include"})
+            },
+            {
+                path:'/content/:id',
+                element:<PrivateRoute><Content></Content></PrivateRoute>,
                 loader:({params})=>fetch(`http://localhost:5000/book/${params.id}`,{credentials:"include"})
             }
         ]

@@ -1,11 +1,11 @@
 import { Rating } from "@smastrom/react-rating";
-import { useLoaderData } from "react-router-dom";
+import { Link, useLoaderData } from "react-router-dom";
 import '@smastrom/react-rating/style.css'
 
 
 const BookDetails = () => {
     const loadedBookDetail = useLoaderData()
-    const {image,name,author_name,quantity,rating,category,short_description,content}= loadedBookDetail
+    const {image,name,author_name,quantity,rating,category,short_description,_id}= loadedBookDetail
 
     return (
         <div className=" overflow-hidden w-[80%] mx-auto bg-white rounded-lg shadow-lg dark:bg-gray-800">
@@ -20,7 +20,9 @@ const BookDetails = () => {
 <div className="flex items-center w-[60%] mx-auto justify-between px-4 py-2 bg-gray-900">
 
 <button className="px-2 py-1 text-xs font-semibold text-gray-900 uppercase transition-colors duration-300 transform bg-white rounded hover:bg-gray-200 focus:bg-gray-400 focus:outline-none">Borrow</button>
-<button className="px-2 py-1 text-xs font-semibold text-gray-900 uppercase transition-colors duration-300 transform bg-white rounded hover:bg-gray-200 focus:bg-gray-400 focus:outline-none">Read</button>
+ <Link to={`/content/${_id}`}>
+ <button className="px-2 py-1 text-xs font-semibold text-gray-900 uppercase transition-colors duration-300 transform bg-white rounded hover:bg-gray-200 focus:bg-gray-400 focus:outline-none">Read</button>
+ </Link>
 </div>
 <div className="text-center space-y-2 my-3">
 <p className="mt-1 text-gray-600 dark:text-gray-400"><span className="text-lg font-medium">Description: </span>{short_description}</p>

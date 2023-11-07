@@ -48,7 +48,7 @@ const AddBooks = () => {
            <div className="md:flex">
                 <div className="w-[100%]">
                 <h1 className="">Category:</h1>
-                <input required type="text" name="category" className="rounded p-1 w-[70%] lg:w-[65%]" />
+                <input required placeholder='1st letter must be in uppercase' type="text" name="category" className="rounded p-1 w-[70%] lg:w-[65%]" />
                 </div>
 
                 <div className="w-[100%] ">
