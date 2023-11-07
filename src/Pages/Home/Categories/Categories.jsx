@@ -8,7 +8,7 @@ const Categories = () => {
     const [categories,setCategories] = useState([])
     console.log(categories);
     useEffect(()=>{
-        axiosBasic.get('http://localhost:5000/categories').then(res=>setCategories(res.data))
+        axiosBasic.get('/categories').then(res=>setCategories(res.data))
     },[axiosBasic])
     return (
         <div className="w-[70%] md:w-[80%] lg:w-[85%] mx-auto my-7">

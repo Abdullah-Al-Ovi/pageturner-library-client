@@ -21,8 +21,7 @@ const BookForAllBooks = ({book,user}) => {
            <hr />
            <h1><span className="text-sm md:text-base font-medium">Author: </span>{author_name}</h1>
            <h1><span className="text-sm md:text-base font-medium">Category: </span>{category}</h1>
-
-           
+ 
            <Rating style={{ maxWidth: 150 }}  readOnly size={30} value={rating}  />
        </div>
         </div>

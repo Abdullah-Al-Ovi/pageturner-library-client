@@ -24,7 +24,7 @@ const UpdateBook = () => {
         }
         console.log(updatedBook);
 
-        axiosBasic.put(`http://localhost:5000/update/${loadedBook._id}`,updatedBook)
+        axiosBasic.put(`/update/${loadedBook._id}`,updatedBook)
         .then(res=>{
             if(res.data.modifiedCount){
                 swal("Congratulations!", "Book Updated successfully!", "success");
