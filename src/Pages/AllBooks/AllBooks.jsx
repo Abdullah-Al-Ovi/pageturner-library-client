@@ -1,9 +1,11 @@
-import { useEffect, useState } from "react";
+import { useContext, useEffect, useState } from "react";
 import useAxios from "../../Components/Hooks/useAxios";
 import BookForAllBooks from "./BookForAllBooks/BookForAllBooks";
+import { authContex } from "../../Components/AuthProvider/AuthProvider";
 
 const AllBooks = () => {
     const axiosBasic = useAxios()
+    const {user}=useContext(authContex)
     const [allBooks,setAllBooks]= useState([])
     const [availableBooks,setAvailableBooks] = useState([])
     const [books,setBooks] = useState([])
@@ -52,7 +54,7 @@ const AllBooks = () => {
             <div className="grid grid-cols-2 w-[90%] md:w-[80%] gap-5 mx-auto">
              
              {
-                 books?.map(book=><BookForAllBooks key={book._id} book={book}></BookForAllBooks>)
+                 books?.map(book=><BookForAllBooks key={book._id} book={book} user={user}></BookForAllBooks>)
              }
          </div>
         </div>

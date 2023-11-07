@@ -1,9 +1,14 @@
 import { Rating } from "@smastrom/react-rating";
 import '@smastrom/react-rating/style.css'
+import { Link } from "react-router-dom";
 
 
-const BookForAllBooks = ({book}) => {
-    const {image,name,author_name,category,rating} = book
+const BookForAllBooks = ({book,user}) => {
+    const {_id,image,name,author_name,category,rating} = book
+    console.log(user.email);
+    const handleUpdate=()=>{
+        console.log('Achi re bhai');
+    }
     return (
         <div className="card flex flex-col card-side bg-base-100 shadow-xl">
         <div className='flex flex-grow flex-col md:flex-row'>
@@ -26,7 +31,9 @@ const BookForAllBooks = ({book}) => {
         </div>
         
         <div className=' w-[100%] text-center'>
-        <button className='w-[60%] text-white  font-medium bg-red-300 rounded my-3 '>Update</button>
+       <Link to={`/updateBook/${_id}`}>
+            <button  onClick={handleUpdate} className={`w-[60%] text-white  font-medium bg-red-300 rounded my-3 ${user?.email === 'admin@gmail.com' || 'hidden'}`}>Update</button>
+       </Link>
         </div>
         
 </div>
