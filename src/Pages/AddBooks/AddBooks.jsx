@@ -16,13 +16,13 @@ const AddBooks = () => {
         const short_description = form.description.value
         const content = form.content.value
         const bookInfo = {name,author_name,image,category,rating,quantity,short_description,content}
-        const categoryInfo = {name: category}
-        console.log(bookInfo);
+        
         axiosBasic.post('/addBook',bookInfo)
         .then(res=>{
             const insertedId = res.data.insertedId
             if(insertedId){
                 swal("Congratulations!", "Book added successfully!", "success");
+                form.reset()
             }
         })
     }
