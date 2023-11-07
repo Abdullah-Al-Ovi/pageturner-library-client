@@ -1,10 +1,20 @@
 import swal from "sweetalert";
 import useAxios from "../../../Components/Hooks/useAxios";
+import { useEffect, useState } from "react";
 
 
 const BorrowedBook = ({book,borrowedBooks,setBorrowedBooks}) => {
+    const[bookToIncreaseQuan,setBookToIncreaseQuan]=useState([])
+    const {quantity} = bookToIncreaseQuan
     const {issueDate,returnDate,bookName,bookCategory,bookImage,_id} = book
     const axiosBasic = useAxios()
+    console.log(bookToIncreaseQuan);
+    useEffect(()=>{
+        axiosBasic.get(`/increaseQuantity/${bookName}`)
+        .then(res=>{
+            setBookToIncreaseQuan(res.data)
+        })
+    },[axiosBasic,bookName])
 
     const handleReturn = ()=>{
         axiosBasic.delete(`/returnBook/${_id}`)
@@ -13,6 +23,13 @@ const BorrowedBook = ({book,borrowedBooks,setBorrowedBooks}) => {
             if(res.data.deletedCount){
                 const rem = borrowedBooks?.filter(borrowedBook=>borrowedBook._id !== book._id)
                 setBorrowedBooks(rem)
+                const newQuantity = quantity !== null ? quantity + 1 : 1;
+                console.log(quantity,newQuantity);
+                axiosBasic.patch(`/updateQuantity/${bookToIncreaseQuan._id}`,{quantity:newQuantity})
+                .then(res=>{
+                    console.log(res.data);
+                })
+
                 swal('Yesss!','You have returned the book','success')
             }
         })

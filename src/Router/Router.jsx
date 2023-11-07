@@ -47,22 +47,22 @@ const Router = createBrowserRouter([
             {
                 path:'/category/:cat',
                 element:<CategoryBooks></CategoryBooks>,
-                loader:({params})=>fetch(`http://localhost:5000/category/${params.cat}`)
+                loader:({params})=>fetch(`https://library-server-sigma.vercel.app/category/${params.cat}`)
             },
             {
                 path:'/book/:id',
                 element:<PrivateRoute><BookDetails></BookDetails></PrivateRoute>,
-                loader:({params})=>fetch(`http://localhost:5000/book/${params.id}`,{credentials:"include"})
+                loader:({params})=>fetch(`https://library-server-sigma.vercel.app/book/${params.id}`,{credentials:"include"})
             },
             {
                 path:'/updateBook/:id',
                 element:<AdminPrivateRoute><UpdateBook></UpdateBook></AdminPrivateRoute>,
-                loader:({params})=>fetch(`http://localhost:5000/book/${params.id}`,{credentials:"include"})
+                loader:({params})=>fetch(`https://library-server-sigma.vercel.app/book/${params.id}`,{credentials:"include"})
             },
             {
                 path:'/content/:id',
                 element:<PrivateRoute><Content></Content></PrivateRoute>,
-                loader:({params})=>fetch(`http://localhost:5000/book/${params.id}`,{credentials:"include"})
+                loader:({params})=>fetch(`https://library-server-sigma.vercel.app/book/${params.id}`,{credentials:"include"})
             }
         ]
     }
