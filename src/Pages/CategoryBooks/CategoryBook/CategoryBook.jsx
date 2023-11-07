@@ -9,7 +9,7 @@ const CategoryBook = ({books}) => {
         <div className="card flex flex-col card-side bg-base-100 shadow-xl">
         <div className='flex flex-grow flex-col md:flex-row'>
        
-       <figure className='w-[95%] md:w-[55%] lg:w-[45%] mx-auto rounded'><img className=' lg:object-cover object-contain h-[170px] ' src={image} /></figure>
+       <figure className='w-[95%] md:w-[55%] lg:w-[45%] mx-auto rounded'><img className=' lg:object-cover object-contain h-[170px] lg:h-[270px] ' src={image} /></figure>
     
        <div className="card-body flex-grow  pl-2">
       
