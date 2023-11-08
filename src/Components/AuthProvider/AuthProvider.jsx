@@ -3,6 +3,7 @@ import { createContext, useEffect, useState } from "react";
 // import { auth } from "../../../firebase.configue";
 import {auth} from '../../../firebase'
 import useAxios from "../Hooks/useAxios";
+import axios from "axios";
 
 
 export const authContex = createContext(null)
@@ -11,7 +12,7 @@ const AuthProvider = ({children}) => {
     const [user,setUser]= useState('')
     const [loading,setLoading]=useState(true)
     const [disName,setDisName]=useState('')
-    const axiosBasic = useAxios()
+    // const axiosBasic = useAxios()
     const [photoLink,setPhotoLink] = useState('')
     
     
@@ -47,14 +48,20 @@ const AuthProvider = ({children}) => {
             setUser(currentUser)
             setLoading(false)
             if(currentUser){
-              axiosBasic.post('/jwt',loggedUser) 
+              axios.post('https://library-server-sigma.vercel.app/jwt',loggedUser,{withCredentials:true}) 
               .then(res=>{
                 console.log(res.data);
-              }) 
+              })    
+            }
+            else {
+                axios.post('https://library-server-sigma.vercel.app/logOut',loggedUser,{withCredentials:true})
+                .then(res=>{
+                    console.log(res.data);
+                })
             }
         })
         return ()=> unSubs()
-    },[axiosBasic,user?.email])
+    },[user?.email])
 
     const handleName=(name)=>{
       return setDisName(name)
@@ -66,6 +73,7 @@ const AuthProvider = ({children}) => {
     
 
     const authInfo = {user,handleImage,createUser,updateUser,googleSignIn,signInUser,logOut,loading,handleName,disName,photoLink}
+
     return (
         <authContex.Provider value={authInfo}>
             {children}
