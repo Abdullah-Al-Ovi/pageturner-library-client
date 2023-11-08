@@ -4,6 +4,7 @@
   * So only admin can add and update book. Email : admin@gmail.com and pass: Asdfg@
   * Don't copy-paste pass,rather type it manually.
   * JWT token in cookie will be available for 1 hour.After that you to sign in again to add or update book.Hopefully you will be automatically signed out and redirected to sign in page.
+  * Though after borrowing a book without returning it gives a success message,but the book is not stored in DB or borrowed books route.
 
 ### Feature:
   * Only authorized admin/moderator can add book or update book information.

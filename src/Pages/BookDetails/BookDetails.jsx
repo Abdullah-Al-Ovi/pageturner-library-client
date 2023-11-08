@@ -44,6 +44,7 @@ const BookDetails = () => {
     if (error.response) {
       if (error.response.status === 400) {
         closeModal()
+        console.log( error.response.data.message);
         swal("Oops!", error.response.data.message, "error");
       }
     }
