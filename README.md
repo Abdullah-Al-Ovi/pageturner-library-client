@@ -3,7 +3,7 @@
   * Applied optional requirements no 1 and 5.
   * So only admin can add and update book. Email : admin@gmail.com and pass: Asdfg@
   * Don't copy-paste pass,rather type it manually.
-  * JWT token in cookie will be available for 1 hour.After that you to sign in again to add or update book.Hopefully you will be automatically lsigned out and redirected to sign in page.
+  * JWT token in cookie will be available for 1 hour.After that you to sign in again to add or update book.Hopefully you will be automatically signed out and redirected to sign in page.
 
 ### Feature:
   * Only authorized admin/moderator can add book or update book information.
