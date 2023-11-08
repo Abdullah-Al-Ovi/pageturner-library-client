@@ -70,14 +70,14 @@ const AddBooks = () => {
             </div>
            
            </div>
-           <div className=" mt-3 w-[85%] md:w-[55%] lg:w-[68%] mx-auto lg:flex block gap-3 ">
+           <div className=" mt-3 w-[65%] md:w-[55%] lg:w-[68%] md:mx-auto lg:flex block gap-3 ">
                 <div>
                 <h1 className='text-start'>Description</h1>
-                <textarea required name="description" id="" cols="40" rows="5"></textarea>
+                <textarea required name="description"  cols="40" rows="5"></textarea>
                 </div>
                 <div>
                 <h1 className='text-start'>Content</h1>
-                <textarea required name="content" id="" cols="40" rows="5"></textarea>
+                <textarea  required name="content" id="" cols="40" rows="5"></textarea>
                 </div>
            </div>
            <div className="text-center ">

@@ -13,12 +13,14 @@ import CategoryBooks from "../Pages/CategoryBooks/CategoryBooks";
 import BookDetails from "../Pages/BookDetails/BookDetails";
 import UpdateBook from "../Pages/UpdateBook/UpdateBook";
 import Content from "../Pages/COntent/Content";
+import ErrorPage from "../Pages/ErrorPage/ErrorPage";
 
 
 const Router = createBrowserRouter([
     {
         path:'/',
         element:<Root></Root>,
+        errorElement:<ErrorPage></ErrorPage>,
         children:[
             {
                 path:'/',

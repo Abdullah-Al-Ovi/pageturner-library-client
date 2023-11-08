@@ -2,6 +2,7 @@ import { createUserWithEmailAndPassword, onAuthStateChanged, updateProfile,Googl
 import { createContext, useEffect, useState } from "react";
 // import { auth } from "../../../firebase.configue";
 import {auth} from '../../../firebase'
+import useAxios from "../Hooks/useAxios";
 
 
 export const authContex = createContext(null)
@@ -10,6 +11,7 @@ const AuthProvider = ({children}) => {
     const [user,setUser]= useState('')
     const [loading,setLoading]=useState(true)
     const [disName,setDisName]=useState('')
+    const axiosBasic = useAxios()
     const [photoLink,setPhotoLink] = useState('')
     
     
@@ -41,11 +43,18 @@ const AuthProvider = ({children}) => {
     
     useEffect(()=>{
         const unSubs = onAuthStateChanged(auth,(currentUser)=>{
+            const loggedUser = currentUser?.email || user?.email
             setUser(currentUser)
             setLoading(false)
+            if(currentUser){
+              axiosBasic.post('/jwt',loggedUser) 
+              .then(res=>{
+                console.log(res.data);
+              }) 
+            }
         })
         return ()=> unSubs()
-    },[])
+    },[axiosBasic,user?.email])
 
     const handleName=(name)=>{
       return setDisName(name)
