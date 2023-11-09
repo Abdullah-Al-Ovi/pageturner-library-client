@@ -38,7 +38,7 @@ const Footer = () => {
             </a>
             <div className="mt-6 lg:max-w-sm">
               <p className={`text-sm text-gray-800 ${!isLight && "text-white"} `}>
-              At Trend Junction, PageTurner Library, your gateway to a world of knowledge and imagination. Our library is a haven for book lovers, offering a diverse collection of literary treasures waiting to be explored. Whether you&rsquo;re an avid reader or just starting your reading journey, PageTurner Library is your resource for inspiration, education, and entertainment. 
+              At PageTurner Library, your gateway to a world of knowledge and imagination. Our library is a haven for book lovers, offering a diverse collection of literary treasures waiting to be explored. Whether you&rsquo;re an avid reader or just starting your reading journey, PageTurner Library is your resource for inspiration, education, and entertainment. 
               </p>
               <p className={`mt-4 ${!isLight && "text-white"} text-sm text-gray-900`}>
               We are committed to fostering a love for reading, and our mission is to provide you with the best books and resources to enrich your life. Join us in our literary adventure and let the pages of our books take you on a journey through time and space.

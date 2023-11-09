@@ -31,6 +31,7 @@ const BookDetails = () => {
         console.log(borrowInfo);
         axiosBasic.post('/addToBorrowed', borrowInfo)
   .then(res => {
+    // console.log(res.data);
     swal("Congratulations!", "Book added successfully!", "success");
     const newQuantity = quantity - 1;
     setQuantity(newQuantity)
@@ -42,12 +43,16 @@ const BookDetails = () => {
   })
   .catch(error => {
     if (error.response) {
+      console.log(error.response);
       if (error.response.status === 400) {
-        closeModal()
-        console.log( error.response.data.message);
+        console.log(error.response.status);
+        closeModal();
         swal("Oops!", error.response.data.message, "error");
       }
     }
+    else {
+    console.log("An unexpected error occurred:", error);
+  }
   });
 
 
