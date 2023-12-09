@@ -22,3 +22,5 @@
   * Made the borrow button disable when book's quantity stands to zero.
   * Gave the permission of adding or updating book only to the admin.
   * Restricted normal user to enter into the admin protected route.
+  * Made sure when a user borrows a book the quantity is decreased and when a user returns a book the quantity incraeses.
+  * Also implemented the available books filtering option.
