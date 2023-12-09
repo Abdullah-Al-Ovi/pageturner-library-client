@@ -13,7 +13,7 @@
   * User token will be valid till 1 hour after signing in.After the time period if user goes to *All Books** page.he/she be automatically signed out and redirected to sign in page.
 
 ### Details:
-  * Use reactjs as frontend technology and nodejs & mongodb as backend technology.
+  * Used reactjs as frontend technology and nodejs & mongodb as backend technology.
   * Used firebase for authentication.
   * Applied success/error message when user sign in or sign up.
   * Applied logics to redirect unregistred user to sign in page to confirm their identity.
