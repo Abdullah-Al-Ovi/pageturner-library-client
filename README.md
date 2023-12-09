@@ -15,6 +15,8 @@
 ### Details:
   * Use reactjs as frontend technology and nodejs & mongodb as backend technology.
   * Used firebase for authentication.
+  * Applied success/error message when user sign in or sign up.
+  * Applied logics to redirect unregistred user to sign in page to confirm their identity.
   * Used JWT for authorization and protecting API.
   * Created API for CRUD operation on various functionality such as to add,update,borrow and return book.
   * Also added private route to maintain security.
@@ -24,3 +26,4 @@
   * Restricted normal user to enter into the admin protected route.
   * Made sure when a user borrows a book the quantity is decreased and when a user returns a book the quantity incraeses.
   * Also implemented the available books filtering option.
+  * * Applied success/error message at every succesfull CRUD operation.
