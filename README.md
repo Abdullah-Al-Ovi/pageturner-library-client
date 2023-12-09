@@ -1,6 +1,7 @@
 # Live Link: https://pageturnerlibrary.surge.sh/
 ### Admin Credentials: 
-  *  Email : admin@gmail.com and pass: Asdfg@
+  *  Email : admin@gmail.com
+  *  pass: Asdfg@
 ### Feature:
   * Only authorized admin/moderator can add book or update book information.
   * Add book route and update button will visible only when authorized admin/moderator logins.
