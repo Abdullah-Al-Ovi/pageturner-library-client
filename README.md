@@ -26,4 +26,4 @@
   * Restricted normal user to enter into the admin protected route.
   * Made sure when a user borrows a book the quantity is decreased and when a user returns a book the quantity incraeses.
   * Also implemented the available books filtering option.
-  * * Applied success/error message at every succesfull CRUD operation.
+  * Applied success/error message at every succesfull CRUD operation.
