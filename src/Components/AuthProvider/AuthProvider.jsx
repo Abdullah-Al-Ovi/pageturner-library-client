@@ -2,7 +2,7 @@ import { createUserWithEmailAndPassword, onAuthStateChanged, updateProfile,Googl
 import { createContext, useEffect, useState } from "react";
 // import { auth } from "../../../firebase.configue";
 import {auth} from '../../../firebase'
-import useAxios from "../Hooks/useAxios";
+
 import axios from "axios";
 
 
@@ -22,8 +22,7 @@ const AuthProvider = ({children}) => {
         return createUserWithEmailAndPassword(auth,email,password)
     }
     const updateUser=(name,link)=>{
-      
-     
+
         return updateProfile(auth.currentUser, {
             displayName: name, photoURL: link
           })

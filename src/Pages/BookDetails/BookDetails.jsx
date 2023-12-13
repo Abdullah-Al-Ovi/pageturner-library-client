@@ -43,7 +43,7 @@ const BookDetails = () => {
             })
         }
         else{
-          swal("Oopps!", "You have already borrowed this book!", "error");
+          swal("Oopps!", "You have already borrowed this book or You have reached the limit!", "error");
         }
 
         closeModal()
