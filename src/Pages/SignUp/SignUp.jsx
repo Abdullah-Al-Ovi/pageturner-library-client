@@ -3,11 +3,13 @@ import { Link} from "react-router-dom";
 
 import swal from 'sweetalert';
 import { authContex } from "../../Components/AuthProvider/AuthProvider";
+import useAxios from "../../Components/Hooks/useAxios";
 
 
 const SignUp = () => {
     const {createUser,updateUser,handleName,handleImage} = useContext(authContex)
     const [err,setErr] = useState('')
+    const axiosBasic = useAxios()
     
  
 
@@ -18,6 +20,9 @@ const SignUp = () => {
         const password = e.target.password.value
         const name= e.target.name.value
         const link= e.target.link.value
+        const userInfo={
+            email,name
+        }
         console.log(link);
         setErr('')
 
@@ -35,14 +40,17 @@ const SignUp = () => {
            
            updateUser(name,link)
             .then(()=>{
-                
+               axiosBasic.post('/users',userInfo)
+               .then(res=>{
+                if(res?.data?.insertedId){
+                    swal("Sign up Successfully!", "You are now a part of our family!", "success");
+                }
+               })
             })
             .catch(()=>{
                 
             })
-            
-            swal("Sign up Successfully!", "You are now a part of our family!", "success");
-           
+ 
         })
         .catch(error=>{
             setErr(error.message)

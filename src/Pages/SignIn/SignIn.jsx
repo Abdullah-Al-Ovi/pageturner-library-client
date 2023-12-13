@@ -4,10 +4,12 @@ import { Link, useLocation, useNavigate } from 'react-router-dom';
 
 import swal from 'sweetalert';
 import { authContex } from '../../Components/AuthProvider/AuthProvider';
+import useAxios from '../../Components/Hooks/useAxios';
 const SignIn = () => {
     const {googleSignIn,signInUser} = useContext(authContex)
     const [err,setErr]=useState('')
     const location =useLocation()
+    const axiosBasic = useAxios()
     const navigate = useNavigate()
 
     const handleSignIn=e=>{
@@ -31,16 +33,29 @@ const SignIn = () => {
 
     }
 
-    const handleGoogleSignIn=()=>{
+    const handleGoogleSignIn=async ()=>{
         setErr('')
-        googleSignIn()
-        .then(()=>{
+        try{
+            const result = await googleSignIn();
+        
+        const userInfo = {
+            name: result?.user?.displayName,
+            email: result?.user?.email,
+        };
+
+      const res = await axiosBasic.post('/users', userInfo)
+        
+            console.log(res.data);
+        
             navigate(location?.state ? location.state : '/' )
             swal("Sign in with Google Successful!", "Thanks for coming back!", "success");
-        })
-        .catch(error=>{
-            setErr(error.message)
-        })
+        }
+        catch (error) {
+            setErr(error.message);
+            console.log(error.message);
+        }
+        
+       
     }
     
 

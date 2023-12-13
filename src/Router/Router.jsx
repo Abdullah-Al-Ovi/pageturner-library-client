@@ -14,6 +14,7 @@ import BookDetails from "../Pages/BookDetails/BookDetails";
 import UpdateBook from "../Pages/UpdateBook/UpdateBook";
 import Content from "../Pages/COntent/Content";
 import ErrorPage from "../Pages/ErrorPage/ErrorPage";
+import AllUser from "../Pages/AllUser/AllUser";
 
 
 const Router = createBrowserRouter([
@@ -65,6 +66,10 @@ const Router = createBrowserRouter([
                 path:'/content/:id',
                 element:<PrivateRoute><Content></Content></PrivateRoute>,
                 loader:({params})=>fetch(`https://library-server-sigma.vercel.app/book/${params.id}`,{credentials:"include"})
+            },
+            {
+                path:'/allUser',
+                element:<AdminPrivateRoute><AllUser></AllUser></AdminPrivateRoute>
             }
         ]
     }
