@@ -12,7 +12,7 @@ const Home = () => {
         <div className={`${!isLight && 'darkcss'}`}>
             <Banner></Banner>
             <Categories></Categories>
-            <Faq></Faq>
+            {/* <Faq></Faq> */}
             <DownloadApp></DownloadApp>
         </div>
     );
